@@ -1,0 +1,44 @@
+algorithms:
+  # ── Built-in algorithms ──────────────────────────────────────────
+  - id: sw_ucb
+    class: algorithms.sw_ucb.SlidingWindowUCB
+    built_in: true
+    enabled: true
+
+  - id: d_ucb
+    class: algorithms.d_ucb.DiscountedUCB
+    built_in: true
+    enabled: true
+
+  - id: thompson_sampling
+    class: algorithms.thompson.ThompsonSampling
+    built_in: true
+    enabled: true
+
+  - id: epsilon_greedy
+    class: algorithms.epsilon_greedy.EpsilonGreedy
+    built_in: true
+    enabled: true
+
+  - id: round_robin
+    class: algorithms.round_robin.RoundRobin
+    built_in: true
+    enabled: true
+
+  - id: hybrid_ensemble
+    class: algorithms.hybrid_ensemble.HybridEnsemble
+    built_in: true
+    enabled: true
+
+  - id: advanced_sw_ucb
+    class: algorithms.advanced_sw_ucb.AdvancedSlidingWindowUCB
+    built_in: true
+    enabled: true
+    enabled: true
+
+  # ── Custom / plugin algorithms ───────────────────────────────────
+  # To add your own: implement BaseAlgorithm, add an entry below
+  # - id: my_custom_algo
+  #   class: mypackage.my_module.MyAlgorithm
+  #   built_in: false
+  #   enabled: true
